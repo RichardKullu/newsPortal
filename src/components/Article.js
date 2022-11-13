@@ -19,7 +19,7 @@ const Article = () => {
   const [data, setData] = useState("");
   const { slug } = useParams();
   const apiURL =
-    "http://localhost:1337/api/articles?filters[art_slug][$eq]=" +
+    "https://newsportal.herokuapp.com/api/articles?filters[art_slug][$eq]=" +
     slug +
     "&populate=art_img,Dynamic,writer.wr_photo,category";
 
@@ -45,10 +45,10 @@ const Article = () => {
             id: item.attributes.art_id,
             title: item.attributes.art_title,
             content: item.attributes.art_content,
-            img: "http://localhost:1337" + item.attributes.art_img.data.attributes.url,
+            img: "https://newsportal.herokuapp.com" + item.attributes.art_img.data.attributes.url,
             writer: item.attributes.writer.data.attributes.wr_name,
             writer_photo:
-              "http://localhost:1337" +
+              "https://newsportal.herokuapp.com" +
               item.attributes.writer.data.attributes.wr_photo.data.attributes
                 .url,
             date: toDate(item.attributes.createdAt),
