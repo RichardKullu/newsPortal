@@ -40,7 +40,7 @@ const Main = () => {
                         'category': item.attributes.category.data === null ? "All" : item.attributes.category.data.attributes.ctgy_name,
                         'category_slug': item.attributes.category.data === null ? "all" : item.attributes.category.data.attributes.ctgy_slug,
                         'writer': item.attributes.writer.data.attributes.wr_name,
-                        'writer_photo': "http://localhost:1337" + item.attributes.writer.data.attributes.wr_photo.data.attributes.url,
+                        'writer_photo': "https://newsportal.herokuapp.com" + item.attributes.writer.data.attributes.wr_photo.data.attributes.url,
                     };
                 });
                 setData(temp);
