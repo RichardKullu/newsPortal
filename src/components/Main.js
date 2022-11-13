@@ -36,7 +36,7 @@ const Main = () => {
                         'slug': item.attributes.art_slug,
                         'descr': item.attributes.art_descr === null ? " " : item.attributes.art_descr,
                         'date': item.attributes.createdAt,
-                        'img': "http://localhost:1337" + item.attributes.art_img.data.attributes.url,
+                        'img': "https://newsportal.herokuapp.com" + item.attributes.art_img.data.attributes.url,
                         'category': item.attributes.category.data === null ? "All" : item.attributes.category.data.attributes.ctgy_name,
                         'category_slug': item.attributes.category.data === null ? "all" : item.attributes.category.data.attributes.ctgy_slug,
                         'writer': item.attributes.writer.data.attributes.wr_name,
