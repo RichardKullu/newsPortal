@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e6c13ad2.css",
+    "main.js": "/static/js/main.d98d3867.js",
+    "static/media/logo-du.png": "/static/media/logo-du.d3a9cbe2aa93ed43af7f.png",
+    "index.html": "/index.html",
+    "main.e6c13ad2.css.map": "/static/css/main.e6c13ad2.css.map",
+    "main.d98d3867.js.map": "/static/js/main.d98d3867.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.d98d3867.js"
+  ]
+}
