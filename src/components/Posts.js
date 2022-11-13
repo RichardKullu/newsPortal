@@ -1,13 +1,14 @@
 import React from "react";
 import { useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
-import UserContext  from "./Main";
+import { UserContext }  from "./Main";
 
 const Posts = () => {
   const data = useContext(UserContext);
 
   useEffect(() => {
     console.log("Posts running useEffect...");
+    console.log(data);
   }, [data]);
 
     /* 
