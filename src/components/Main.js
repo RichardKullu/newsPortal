@@ -11,7 +11,7 @@ const Main = () => {
     const [data, setData] = useState('');
     const [loading, setLoading] = useState(true);
     // const [page, setPage] = useState(1);
-    let apiURL = 'http://localhost:1337/api/articles?fields=*&populate=art_img, category, writer.wr_photo';
+    let apiURL = 'https://newsportal.herokuapp.com/api/articles?fields=*&populate=art_img, category, writer.wr_photo';
 
     useEffect(() => {
         // let {
@@ -36,11 +36,11 @@ const Main = () => {
                         'slug': item.attributes.art_slug,
                         'descr': item.attributes.art_descr === null ? " " : item.attributes.art_descr,
                         'date': item.attributes.createdAt,
-                        'img': "http://localhost:1337" + item.attributes.art_img.data.attributes.url,
+                        'img': "https://newsportal.herokuapp.com" + item.attributes.art_img.data.attributes.url,
                         'category': item.attributes.category.data === null ? "All" : item.attributes.category.data.attributes.ctgy_name,
                         'category_slug': item.attributes.category.data === null ? "all" : item.attributes.category.data.attributes.ctgy_slug,
                         'writer': item.attributes.writer.data.attributes.wr_name,
-                        'writer_photo': "http://localhost:1337" + item.attributes.writer.data.attributes.wr_photo.data.attributes.url,
+                        'writer_photo': "https://newsportal.herokuapp.com" + item.attributes.writer.data.attributes.wr_photo.data.attributes.url,
                     };
                 });
                 setData(temp);
