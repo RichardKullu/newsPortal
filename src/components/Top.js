@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 
 const Top = () => {
   const [data, setData] = useState("");
-  const URL = "http://localhost:1337/api/categories";
+  const URL = "https://newsportal.herokuapp.com/api/categories";
 
   useEffect(() => {
     fetch(URL)
