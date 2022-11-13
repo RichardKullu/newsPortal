@@ -11,7 +11,7 @@ const Main = () => {
     const [data, setData] = useState('');
     const [loading, setLoading] = useState(true);
     // const [page, setPage] = useState(1);
-    let apiURL = 'http://localhost:1337/api/articles?fields=*&populate=art_img, category, writer.wr_photo';
+    let apiURL = 'https://newsportal.herokuapp.com/api/articles?fields=*&populate=art_img, category, writer.wr_photo';
 
     useEffect(() => {
         // let {
