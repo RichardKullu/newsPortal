@@ -45,6 +45,7 @@ const Main = () => {
                 });
                 setData(temp);
                 setLoading(false);
+                console.log(temp);
             })
             .catch(err => {
                 console.log(err);
